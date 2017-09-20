@@ -1,0 +1,21 @@
+.unititem {
+    margin-bottom: 25px;
+
+    &__title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        margin-top: 0;
+    }
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    &__address {
+        margin-bottom: 20px;
+    }
+
+    &__btn {
+        font-size: 18px;
+    }
+}

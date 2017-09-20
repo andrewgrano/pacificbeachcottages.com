@@ -1,0 +1,26 @@
+.btn-red,
+.btn-blue {
+    @extend .btn-primary;
+    background: $red;
+    border-radius: 20px;
+    font-family: $displayFont;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: $gray-dark;
+    }
+}
+
+.btn-blue {
+    background: $blue;
+}
+
+.btn-orange {
+    @extend .btn-primary;
+    background: $orange;
+    border-radius: 20px;
+}

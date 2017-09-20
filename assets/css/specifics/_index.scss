@@ -1,0 +1,22 @@
+.index {
+    &Main {
+        text-align: center;
+
+        &__desc {
+            font-size: 22px;
+            margin-bottom: 45px;
+            margin-top: 30px;
+
+            &:first-child {
+                border-top: 14px solid $white;
+                padding-top: 50px;
+            }
+        }
+
+        &__more {
+            font-size: 20px;
+        }
+
+    }
+
+}
