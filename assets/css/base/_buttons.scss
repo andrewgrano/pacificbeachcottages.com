@@ -7,11 +7,13 @@
     text-decoration: none;
     font-weight: 600;
     padding: 10px 20px;
+    border: 1px solid $white;
 
     &:hover,
     &:active,
     &:focus {
         background: $gray-dark;
+        border: 1px solid $white;
     }
 }
 
