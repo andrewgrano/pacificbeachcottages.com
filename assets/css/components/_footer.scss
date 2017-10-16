@@ -4,5 +4,21 @@
     margin-top: 35px;
     text-align: center;
     font-size: 18px;
+
+    &__seal1 {
+        display: inline-block;
+        width: 185px;
+    }
+
+    &__seal2 {
+        display: inline-block;
+        width: 105px;
+        position: relative;
+        top: 22px;
+    }
+
+    &__link {
+        margin-top: 35px;
+    }
 }
 
