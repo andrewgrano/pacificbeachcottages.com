@@ -7,4 +7,29 @@ body {
 a {
     color: $black;
     text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: $green;
+    }
+}
+
+.sectionHeading {
+        font-family: $displayFont;
+        font-weight: 700;
+        font-size: 42px;
+        border-bottom: 14px solid $white;
+        padding-bottom: 10px;
+        text-align: center;
+        margin-bottom: 50px;
+
+        span {
+            font-size: 54px;
+            margin-right: -1px;
+        }
+}
+
+p {
+    margin-bottom: 25px;
 }

@@ -1,16 +1,33 @@
 .footer {
-    border-top: 3px solid $black;
+    border-top: 3px solid $white;
     padding: 40px 0 60px;
     margin-top: 35px;
     text-align: center;
     font-size: 18px;
 
-    &__seal1 {
+    &__sealPbtc {
+        display: inline-block;
+        width: 150px;
+        position: relative;
+        top: 17px;
+
+        img {
+            width: 100px;
+        }
+
+        span {
+            font-size: 14px;
+            color: #565a5c;
+            display: block;
+        }
+    }
+
+    &__sealSuperhost {
         display: inline-block;
         width: 185px;
     }
 
-    &__seal2 {
+    &__sealReviews {
         display: inline-block;
         width: 105px;
         position: relative;

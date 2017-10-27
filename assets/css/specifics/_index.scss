@@ -6,11 +6,9 @@
             font-size: 22px;
             margin-bottom: 45px;
             margin-top: 30px;
+            padding: 35px 55px;
+            border: 14px solid white;
 
-            &:first-child {
-                border-top: 14px solid $white;
-                padding-top: 50px;
-            }
         }
 
         &__more {
@@ -19,4 +17,192 @@
 
     }
 
+    &Features {
+        padding: 50px 0 85px;
+    }
+
+    &About {
+        margin-bottom: 100px;
+
+        &__desc {
+            padding-left: 30px;
+            padding-right: 25px;
+
+
+        }
+
+        &__list {
+            list-style: none;
+            border-left: 3px solid white;
+            padding-left: 65px;
+            padding-bottom: 50px;
+            padding-top: 25px;
+
+            li {
+                list-style: disc;
+                margin-bottom: 7px;
+
+                &:first-child {
+                    list-style: none;
+                    margin-bottom: 15px;
+                    margin-left: -20px;
+                }
+            }
+        }
+
+
+    }
+
+
+    &Hood {
+        margin-bottom: 100px;
+
+        &__photos {
+            list-style: none;
+            padding: 0;
+
+
+            li {
+                display: inline-block;
+                width: 33.33%;
+                margin-right: -4px;
+                padding: 0 10px;
+                 margin-bottom: 40px;
+            }
+        }
+
+        &__desc {
+
+        }
+    }
+
+    &Rules {
+        text-align: center;
+        margin-bottom: 100px;
+
+        &__link {
+            font-size: 24px;
+            cursor: pointer;
+            font-weight: 700;
+        }
+    }
+
+    &Longterm,
+    &Charity {
+        text-align: center;
+        margin-bottom: 150px;
+        border: 14px solid $white;
+        height: 465px;
+
+        &__title {
+            font-family: $displayFont;
+            font-weight: 700;
+            font-size: 32px;
+            border-bottom: 0 none;
+            height: 115px;
+            padding-top: 20px;
+
+            span {
+                display: block;
+                font-size: 24px;
+            }
+        }
+
+        &__desc {
+            height: 250px;
+            display: table;
+            width: 100%;
+
+            & > div {
+                display: table-cell;
+                vertical-align: middle;
+                padding: 0 20px;
+            }
+
+        }
+
+        &__link {
+            height: 75px;
+            display: block;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+
+    &Outro {
+        text-align: center;
+        margin-bottom: 75px;
+
+        &__link {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            display: block;
+        }
+
+        .unititem {
+            text-decoration: none;
+            border: 4px solid white;
+            display: block;
+            cursor: pointer;
+            margin-bottom: 50px;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: $black;
+
+                .unititem__imgWrapper {
+
+                    img {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+
+        .unititem__btn{
+            font-size: 24px;
+            position: absolute;
+            top: 0px;
+            left: 155px;
+            z-index: 2;
+            padding: 10px 28px;
+            border-radius: 0 0 15px 15px;
+            border-width: 4px;
+        }
+
+        .unititem__title {
+            font-weight: 700;
+            margin-top: -107px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 10;
+            background: rgba(255,255,255,0.7);
+            padding-top: 5px;
+            padding-bottom: 10px;
+        }
+
+        .unititem__address {
+            position: relative;
+            position: relative;
+            background: rgba(255,255,255,0.7);
+            padding-bottom: 9px;
+            margin-bottom: 0;
+
+        }
+
+        .unititem__imgWrapper {
+            position: relative;
+            background: $white;
+
+            img {
+                opacity: 0.85;
+                margin-bottom: 0;
+            }
+        }
+
+    }
+
 }
+
