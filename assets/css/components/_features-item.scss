@@ -33,6 +33,41 @@
             }
         }
     }
+
+    .owl-theme {
+        .owl-nav {
+            .owl-prev {
+                float: left;
+            }
+
+            .owl-next {
+                float: right;
+            }
+
+            [class*='owl-'] {
+                background: $white;
+            }
+        }
+
+        .owl-dots {
+            margin-top: 20px;
+
+            .owl-dot {
+                span {
+                    height: 12px;
+                    width: 12px;
+                    background: $white;
+                    border: 1px solid $black;
+                }
+
+                &.active {
+                    span {
+                        background: $black;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
