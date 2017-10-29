@@ -1,5 +1,5 @@
 body {
-    background: $peach;
+    background: $sand;
     font-family: $defaultFont;
     font-size: 18px;
 }
@@ -25,9 +25,17 @@ a {
         margin-bottom: 50px;
         line-height: 1.1;
 
+        @media (max-width: $screen-xs-max) {
+            font-size: 28px;
+        }
+
         span {
             font-size: 54px;
             margin-right: -1px;
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 30px;
+            }
         }
 }
 

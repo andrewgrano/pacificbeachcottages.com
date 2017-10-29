@@ -9,6 +9,23 @@
             padding: 35px 55px;
             border: 14px solid white;
 
+            @media (max-width: $screen-md-max) {
+                font-size: 20px;
+                padding: 30px 50px;
+            }
+
+            @media (max-width: $screen-sm-max) {
+                font-size: 20px;
+                padding: 30px 40px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 18px;
+                padding: 0px 15px;
+                border: 0 none;
+                margin: 30px 0;
+            }
+
         }
 
         &__more {
@@ -19,6 +36,11 @@
 
     &Features {
         padding: 50px 0 85px;
+
+        @media (max-width: $screen-xs-max) {
+            padding-bottom: 25px;
+        }
+
     }
 
     &About {
@@ -28,7 +50,10 @@
             padding-left: 30px;
             padding-right: 25px;
 
-
+            @media (max-width: $screen-sm-max) {
+                padding-left: 0;
+                padding-right: 10px;
+            }
         }
 
         &__list {
@@ -37,6 +62,16 @@
             padding-left: 65px;
             padding-bottom: 50px;
             padding-top: 25px;
+
+            @media (max-width: $screen-sm-max) {
+                padding-left: 45px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                border-left: 0 none;
+                padding-left: 25px;
+                padding-bottom: 0;
+            }
 
             li {
                 list-style: disc;
@@ -57,6 +92,10 @@
     &Hood {
         margin-bottom: 100px;
 
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 75px;
+        }
+
         &__photos {
             list-style: none;
             padding: 0;
@@ -67,7 +106,12 @@
                 width: 33.33%;
                 margin-right: -4px;
                 padding: 0 10px;
-                 margin-bottom: 40px;
+                margin-bottom: 40px;
+
+                 @media (max-width: $screen-xs-max) {
+                    width: 100%;
+                    margin-right: 0;
+                }
             }
         }
 
@@ -79,6 +123,18 @@
     &Rules {
         text-align: center;
         margin-bottom: 150px;
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 100px;
+        }
+
+        .sectionHeading {
+            br {
+                @media (max-width: $screen-sm-max) {
+                    display: none;
+                }
+            }
+        }
 
         &__desc {
             margin-bottom: 45px;
@@ -96,6 +152,12 @@
             margin-right: 40px;
             padding-bottom: 15px;
             padding-top: 10px;
+
+            @media (max-width: $screen-xs-max) {
+                margin-right: 5px;
+                margin-left: 5px;
+                margin-bottom: 15px;
+            }
 
             &:hover,
             &:active,
@@ -126,6 +188,15 @@
         border: 14px solid $white;
         height: 465px;
 
+        @media (max-width: $screen-sm-max) {
+            margin: 0 65px 55px;
+            height: auto;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin: 0 0 55px 0;
+        }
+
         &__title {
             font-family: $displayFont;
             font-weight: 700;
@@ -134,9 +205,22 @@
             height: 115px;
             padding-top: 20px;
 
+            @media (max-width: $screen-sm-max) {
+                height: auto;
+                margin-bottom: 25px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 26px;
+            }
+
             span {
                 display: block;
                 font-size: 24px;
+
+                @media (max-width: $screen-xs-max) {
+                    font-size: 20px;
+                }
             }
         }
 
@@ -145,12 +229,33 @@
             display: table;
             width: 100%;
 
+            @media (max-width: $screen-sm-max) {
+                display: block;
+                height: auto;
+                margin-bottom: 35px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 16px;
+            }
+
             & > div {
                 display: table-cell;
                 vertical-align: middle;
                 padding: 0 20px;
-            }
 
+                @media (max-width: $screen-md-max) {
+                    padding: 0 40px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    display: block;
+                }
+
+                @media (max-width: $screen-xs-max) {
+                    padding: 0 15px;
+                }
+            }
         }
 
         &__link {
@@ -158,6 +263,25 @@
             display: block;
             font-size: 24px;
             font-weight: 700;
+
+            @media (max-width: $screen-sm-max) {
+                height: auto;
+                margin-bottom: 30px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &Charity {
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 115px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 100px;
         }
     }
 
@@ -170,6 +294,10 @@
             font-weight: 700;
             margin-bottom: 40px;
             display: block;
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 18px;
+            }
         }
 
         .unititem {
@@ -178,6 +306,13 @@
             display: block;
             cursor: pointer;
             margin-bottom: 50px;
+
+            @media (max-width: $screen-xs-max) {
+                padding-bottom: 0;
+                max-width: 555px;
+                margin-left: auto;
+                margin-right: auto;
+            }
 
             &:hover,
             &:active,
@@ -202,6 +337,24 @@
             padding: 10px 28px;
             border-radius: 0 0 15px 15px;
             border-width: 4px;
+
+            @media (max-width: $screen-md-max) {
+                left: 93px;
+            }
+
+            @media (max-width: $screen-sm-max) {
+                left: 37px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                position: static;
+                width: 100%;
+                padding: 10px 0;
+                font-size: 22px;
+                border-radius: 0;
+                border: 0;
+                border-bottom: 4px solid $white;
+            }
         }
 
         .unititem__title {
@@ -213,6 +366,16 @@
             background: rgba(255,255,255,0.7);
             padding-top: 5px;
             padding-bottom: 10px;
+
+            @media (max-width: $screen-sm-max) {
+                font-size: 24px;
+                margin-top: -100px;
+            }
+
+            @media (max-width: $screen-xs-max) {
+                margin-top: 0;
+                padding-top: 10px;
+            }
         }
 
         .unititem__address {

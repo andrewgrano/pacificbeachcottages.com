@@ -16,9 +16,23 @@
         // text-transform: uppercase;
         // letter-spacing: 0.02em;
 
+        @media (max-width: $screen-sm-max) {
+            padding-top: 100px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 28px;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
         span {
             font-size: 54px;
             margin-right: -1px;
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 30px;
+            }
         }
 
         img {
@@ -27,8 +41,17 @@
             right: 100px;
             width: 125px;
 
+            @media (max-width: $screen-sm-max) {
+                width: 100px;
+                right: 0;
+            }
+
             &:last-child {
                 left: 100px;
+
+                @media (max-width: $screen-sm-max) {
+                    left: 0;
+                }
             }
         }
 
