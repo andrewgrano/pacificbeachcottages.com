@@ -2,6 +2,7 @@ body {
     background: $sand;
     font-family: $defaultFont;
     font-size: 18px;
+    color: $black;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
     &:hover,
     &:active,
     &:focus {
-        color: $green;
+        color: $orange;
     }
 }
 

@@ -1,5 +1,7 @@
 .btn-red,
-.btn-blue {
+.btn-blue,
+.btn-gray,
+.btn-orange {
     @extend .btn-primary;
     background: $red;
     border-radius: 20px;
@@ -13,8 +15,12 @@
     &:active,
     &:focus {
         background: $gray-dark;
-        border: 1px solid $white;
+        border-color: $white;
     }
+}
+
+.btn-gray {
+    background: $gray-light;
 }
 
 .btn-blue {
@@ -22,7 +28,12 @@
 }
 
 .btn-orange {
-    @extend .btn-primary;
     background: $orange;
-    border-radius: 20px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        background: darken($orange, 10%)
+    }
+
 }
