@@ -2,6 +2,10 @@
 
     &Main {
         margin-bottom: 100px;
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 75px;
+        }
     }
 
     &Hood {

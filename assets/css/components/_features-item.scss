@@ -6,9 +6,10 @@
     &:last-child {
         border-bottom: 0 none;
 
-        // @media (max-width: $screen-sm-max) {
-        //     border-bottom: 4px solid $white;
-        // }
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
     }
 
     &__title {

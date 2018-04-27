@@ -70,21 +70,27 @@
         margin: 0;
 
         @media (max-width: $screen-md-max) {
-            left: 93px;
+            left: 53px;
+            font-size: 18px;
         }
 
         @media (max-width: $screen-sm-max) {
-            left: 37px;
+            left: 45px;
+            font-size: 16px;
         }
 
         @media (max-width: $screen-xs-max) {
             position: static;
             width: 100%;
             padding: 10px 0;
-            font-size: 22px;
+            font-size: 20px;
             border-radius: 0;
             border: 0;
             border-bottom: 4px solid $white;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 18px;
         }
     }
 
@@ -157,6 +163,7 @@
         top: 17px;
 
         @media (max-width: $screen-xs-max) {
+            width: 120px;
             margin-bottom: 35px;
         }
 
