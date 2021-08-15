@@ -1,0 +1,109 @@
+.featuresItem {
+    margin-bottom: 25px;
+    padding-bottom: 30px;
+    border-bottom: 4px solid $white;
+
+    &:last-child {
+        border-bottom: 0 none;
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__title {
+        font-family: $displayFont;
+        font-weight: 700;
+        font-size: 32px;
+        margin-bottom: 35px;
+        margin-top: 0;
+        text-align: center;
+        // border-bottom: 8px solid white;
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &__list {
+        // background: #aca;
+        // padding: 25px 50px 10px;
+        // border: 8px solid white;
+        // border-top: 0 none;
+        // margin-top: -20px;
+
+        @media (max-width: $screen-xs-max) {
+            padding-left: 20px;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 515px) {
+            width: 100%;
+        }
+
+        li {
+            margin-bottom: 20px;
+
+            strong {
+                display: block;
+                margin-bottom: 2px;
+            }
+        }
+    }
+
+    .owl-theme {
+
+        @media (max-width: $screen-sm-max) {
+            margin-bottom: 45px;
+            width: 480px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 515px) {
+            width: 100%;
+        }
+
+        .owl-nav {
+            .owl-prev {
+                float: left;
+            }
+
+            .owl-next {
+                float: right;
+            }
+
+            [class*='owl-'] {
+                background: $white;
+            }
+        }
+
+        .owl-dots {
+            margin-top: 20px;
+
+            .owl-dot {
+                span {
+                    height: 12px;
+                    width: 12px;
+                    background: $white;
+                    border: 1px solid $black;
+                }
+
+                &.active {
+                    span {
+                        background: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

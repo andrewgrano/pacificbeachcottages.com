@@ -1,0 +1,23 @@
+.rel {
+    position: relative;
+}
+
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    margin-right: -2px;
+    margin-left: -2px;
+}
+
+.red {
+    color: $red;
+}
+
+.blue {
+    color: $blue;
+}
+
+.orange {
+    color: $orange;
+}

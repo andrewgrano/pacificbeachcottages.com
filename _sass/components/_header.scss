@@ -1,0 +1,87 @@
+.header {
+    text-align: center;
+    padding: 5px 0 25px 0;
+    margin-bottom: 20px;
+
+    @media (max-width: $screen-xs-max) {
+        padding-bottom: 0;
+    }
+
+    h1 {
+        font-family: $displayFont;
+        font-weight: 700;
+        font-size: 42px;
+        border-bottom: 14px solid $white;
+        padding-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+        padding-top: 140px;
+        margin-top: 0;
+
+        // text-transform: uppercase;
+        // letter-spacing: 0.02em;
+
+        @media (max-width: $screen-sm-max) {
+            padding-top: 100px;
+        }
+
+        @media (max-width: $screen-xs-max) {
+            font-size: 28px;
+            padding-left: 65px;
+            padding-right: 65px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $black;
+
+            &:hover,
+            &:active,
+            &:focus {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+
+        span {
+            font-size: 54px;
+            margin-right: -1px;
+
+            @media (max-width: $screen-xs-max) {
+                font-size: 30px;
+            }
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            right: 100px;
+            width: 125px;
+
+            @media (max-width: $screen-sm-max) {
+                width: 100px;
+                right: 0;
+            }
+
+            &:last-child {
+                left: 100px;
+
+                @media (max-width: $screen-sm-max) {
+                    left: 0;
+                }
+            }
+        }
+
+        // text-transform: uppercase;
+        // margin-bottom: 30px;
+        // letter-spacing: 0.02em;
+        // display: inline;
+        // padding: 2px 18px;
+        // border-radius: 30px;
+        // background: $orange;
+        // color: white;
+        // border: 3px solid white;
+
+    }
+}
+
