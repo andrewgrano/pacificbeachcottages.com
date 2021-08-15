@@ -1,4 +1,4 @@
-# Roots + netlify CMS
+# Roots + netlify CMS.
 
 This is a simple example of how to integrate netlify CMS with a roots based site.
 
